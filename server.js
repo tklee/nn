@@ -22,6 +22,7 @@ app.configure('development', function(){
 
 var d = new Date();
 var d2 = d.getDate();
+var month1 = d.getMonth();
 
 app.get('/', function(req, res){
   res.render('home', {
@@ -29,10 +30,11 @@ app.get('/', function(req, res){
     story2: 'Some football star accompanied some 17 year old leukemia patient to her prom. That\'s quite nice of him, isn\'t it. You\'re directing attention to this? Do you have an infinite supply of attention? No.',
     story3: 'Attacks subside in the Afghan capital. Does this affect your life? Nope.',
     date: d2,
+    month: month1,
 //    details1: 
   });
 });
-console.log(Date.getDate());
+//console.log(Date.getDate());
 app.listen(process.env['app_port'] || 3000);
 
 
