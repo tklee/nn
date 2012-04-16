@@ -20,12 +20,15 @@ app.configure('development', function(){
   app.use(express.errorHandler({ dumpExceptions: true, showStack: true })); 
 });
 
+var d = new Date();
+var d2 = d.getDate();
+
 app.get('/', function(req, res){
   res.render('home', {
     story1: 'There\'s allegedly a scandal involving some Secret Service members. Dude, some people are living their life. Got it? Cool, how about you do your shitty work',
     story2: 'Some football star accompanied some 17 year old leukemia patient to her prom. That\'s quite nice of him, isn\'t it. You\'re directing attention to this? Do you have an infinite supply of attention? No.',
     story3: 'Attacks subside in the Afghan capital. Does this affect your life? Nope.',
-    date: Date.getDate(),
+    date: d2,
 //    details1: 
   });
 });
