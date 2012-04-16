@@ -22,7 +22,21 @@ app.configure('development', function(){
 
 var d = new Date();
 var d2 = d.getDate();
-var month1 = d.getMonth();
+var month1 = d.getMonth() + 1;
+var monthname = null;
+if (month1 == 1) { monthname = 'January'; }
+if (month1 == 2) { monthname = 'February'; }
+if (month1 == 3) { monthname = 'March'; }
+if (month1 == 4) { monthname = 'April'; }
+if (month1 == 5) { monthname = 'May'; }
+if (month1 == 6) { monthname = 'June'; }
+if (month1 == 7) { monthname = 'July'; }
+if (month1 == 8) { monthname = 'August'; }
+if (month1 == 9) { monthname = 'September'; }
+if (month1 == 10) { monthname = 'October'; }
+if (month1 == 11) { monthname = 'November'; }
+if (month1 == 12) { monthname = 'December'; }
+
 
 app.get('/', function(req, res){
   res.render('home', {
@@ -30,7 +44,7 @@ app.get('/', function(req, res){
     story2: 'Some football star accompanied some 17 year old leukemia patient to her prom. That\'s quite nice of him, isn\'t it. You\'re directing attention to this? Do you have an infinite supply of attention? No.',
     story3: 'Attacks subside in the Afghan capital. Does this affect your life? Nope.',
     date: d2,
-    month: month1,
+    month: monthname,
 //    details1: 
   });
 });
