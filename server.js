@@ -25,11 +25,11 @@ app.get('/', function(req, res){
     story1: 'There\'s allegedly a scandal involving some Secret Service members. Dude, some people are living their life. Got it? Cool, how about you do your shitty work',
     story2: 'Some football star accompanied some 17 year old leukemia patient to her prom. That\'s quite nice of him, isn\'t it. You\'re directing attention to this? Do you have an infinite supply of attention? No.',
     story3: 'Attacks subside in the Afghan capital. Does this affect your life? Nope.',
-
+    date: Date.getDate(),
 //    details1: 
   });
 });
-
+console.log(Date.getDate();
 app.listen(process.env['app_port'] || 3000);
 
 
