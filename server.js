@@ -32,7 +32,7 @@ app.get('/', function(req, res){
 //    details1: 
   });
 });
-console.log(Date.getDate();
+console.log(Date.getDate());
 app.listen(process.env['app_port'] || 3000);
 
 
