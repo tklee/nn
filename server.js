@@ -43,6 +43,7 @@ app.get('/', function(req, res){
     story1: 'There\'s allegedly a scandal involving some Secret Service members. Dude, some people are living their life. Got it? Cool, how about you do your shitty work',
     story2: 'Some football star accompanied some 17 year old leukemia patient to her prom. That\'s quite nice of him, isn\'t it. You\'re directing attention to this? Do you have an infinite supply of attention? No.',
     story3: 'Attacks subside in the Afghan capital. Does this affect your life? Nope. Really? Yup.',
+    story4: 'North Korean attempted rocket utterly fails. Double psychout ftw, but really who gives a shit?',
     date: d2,
     month: monthname,
 //    details1: 
